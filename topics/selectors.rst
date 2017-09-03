@@ -119,12 +119,12 @@ Scrapy selector是以 **文字(text)** 或 :class:`~scrapy.http.TextResponse` �
 
 如果没有匹配的元素，则返回 ``None``:
 
-    >>> response.xpath('//div/[id="not-exists"]/text()').extract_first() is None
+    >>> response.xpath('//div[@id="not-exists"]/text()').extract_first() is None
     True
 
 您也可以设置默认的返回值，替代 ``None`` :
 
-    >>> sel.xpath('//div/[id="not-exists"]/text()').extract_first(default='not-found')
+    >>> response.xpath('//div[@id="not-exists"]/text()').extract_first(default='not-found')
     'not-found'
 
 注意CSS选择器可以使用CSS3伪元素(pseudo-elements)来选择文字或者属性节点::
