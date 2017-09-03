@@ -208,7 +208,7 @@ Selector有四个基本的方法(点击相应的方法可以看到详细的API�
 
 您需要进入项目的根目录，执行下列命令来启动shell::
 
-   scrapy shell "http://www.dmoz.org/Computers/Programming/Languages/Python/Books/"
+   scrapy shell "http://dmoztools.net/Computers/Programming/Languages/Python/Books/"
 
 .. note::
 
